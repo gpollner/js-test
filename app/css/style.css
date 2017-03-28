@@ -1,0 +1,17 @@
+body div#search-field {
+  margin: 40px auto !important; }
+
+body div#result-field table thead th {
+  border: solid 0.1em #000000;
+  background: rgba(70, 69, 116, 0.56); }
+
+body div#result-field table tbody td {
+  border: solid 0.1em #000000; }
+
+body div#result-field table tbody td.repo-name {
+  color: #0f0f0f;
+  font-weight: normal; }
+
+body div#result-field table tbody td.repo-url {
+  color: #2b669a;
+  font-weight: bold; }

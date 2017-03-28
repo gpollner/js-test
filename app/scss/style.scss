@@ -1,0 +1,36 @@
+@mixin result-border {
+  border: solid 0.1em #000000;
+}
+
+@mixin result-text($color, $weight) {
+  color: $color;
+  font-weight: $weight;
+}
+
+body{
+  div#search-field {
+    margin: 40px auto !important;
+  }
+
+  div#result-field {
+    table {
+      thead{
+        th{
+          @include result-border;
+          background: rgba(70,69,116,0.56);
+        }
+      }
+      tbody{
+        td {
+          @include result-border;
+        }
+        td.repo-name{
+          @include result-text(#0f0f0f, normal);
+        }
+        td.repo-url{
+          @include result-text(#2b669a, bold);
+        }
+      }
+    }
+  }
+}
